@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>CRUD Example</title>
 </head>
 <body>
-    <h1>CRUD Example</h1>
-    <div>
+    <img id="logo" src="logo-luzeiros.png" alt="Logo Luzeiros">
+    <h1>Gestão de Postagens</h1>
+    <div class="container">
         <h2>Create</h2>
         <form id="create-form">
             <input type="text" id="titulo" placeholder="Title" required>
@@ -16,15 +18,10 @@
             <button type="submit">Create</button>
         </form>
     </div>
-    <div>
+    <div class="container">
         <h2>Read</h2>
-        <button id="read-button">Fetch All Data</button>
+        <button id="read-button">Buscar postagens</button>
         <ul id="data-list"></ul>
-    </div>
-    <div>
-        <h2>Delete</h2>
-        <input type="number" id="delete-id" placeholder="ID to delete" required>
-        <button id="delete-button">Delete</button>
     </div>
     <script src="app.js"></script>
 </body>

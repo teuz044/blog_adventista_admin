@@ -30,6 +30,7 @@ async function createData(titulo, descricao, url) {
     }
 }
 
+
 // Função para excluir dados (DELETE)
 async function deleteData(id) {
     try {
@@ -62,8 +63,17 @@ function displayData(data) {
         const title = document.createElement('p');
         title.textContent = item.titulo;
 
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.setAttribute('data-id', item.id);
+        deleteButton.addEventListener('click', function() {
+            const id = this.getAttribute('data-id');
+            deleteData(id);
+        });
+
         photoDiv.appendChild(img);
         photoDiv.appendChild(title);
+        photoDiv.appendChild(deleteButton);
         dataList.appendChild(photoDiv);
     });
 }
@@ -78,8 +88,3 @@ document.getElementById('create-form').addEventListener('submit', (event) => {
 });
 
 document.getElementById('read-button').addEventListener('click', fetchData);
-
-document.getElementById('delete-button').addEventListener('click', () => {
-    const id = document.getElementById('delete-id').value;
-    deleteData(id);
-});
