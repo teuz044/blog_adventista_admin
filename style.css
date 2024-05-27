@@ -79,10 +79,11 @@ ul li .photo {
 }
 
 ul li img {
-    max-width: 80px;
-    max-height: 80px;
+    width: 80px;
+    height: 80px;
     margin-right: 10px;
     border-radius: 5px;
+    object-fit: cover;
 }
 
 ul li button {
