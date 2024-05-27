@@ -73,6 +73,18 @@ ul li {
     align-items: center;
 }
 
+ul li .photo {
+    display: flex;
+    align-items: center;
+}
+
+ul li img {
+    max-width: 80px;
+    max-height: 80px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
 ul li button {
     background-color: #e74c3c;
     width: auto;
