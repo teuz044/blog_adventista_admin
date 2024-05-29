@@ -86,7 +86,7 @@ ul li img {
     height: auto;
     margin-right: 10px;
     border-radius: 5px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 ul li button {
