@@ -32,6 +32,16 @@ h2 {
     text-align: left;
 }
 
+.container2 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 600px;
+    text-align: left;
+}
+
 input[type="text"], input[type="number"] {
     width: calc(100% - 22px);
     padding: 10px;
